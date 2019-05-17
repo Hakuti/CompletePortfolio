@@ -11,6 +11,18 @@
     transition: transform 0.3s ease-in;
 }
 
+.side-drawer__x-button {
+    position: absolute;
+    top: 22px;
+    /* background: orange; */
+    color: white;
+    right: 20px;
+    padding: 0px;
+    z-index: 100;
+    font-family: 'Roboto';
+    font-weight: 800;
+}
+
 .side-drawer.open {
     /* Default Position */
     transform: translateX(0);
@@ -23,24 +35,72 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* background: #30D2FF; */
+    background: #30D2FF;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    top: -16px;
+    /* margin-right: 10px; */
 }
 
 .side-drawer a {
-    color: purple;
+    
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    display: block;
+    /* background: orange; */
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    margin-left: 30px;
+}
+
+
+.side-drawer a:hover {
+    color: black !important;
+    
 }
 
 .side-drawer li {
-    margin: 0.5rem 0;
-    /* background: blue; */
-
+    margin: 0.0rem 0px;
+    border-bottom: 1px solid white;
+    /* padding: 13px; */
+    
 }
+
+.side-drawer li:nth-child(1) a {
+    padding-top: 27px;
+    padding-bottom: 17px;
+    font-size: 1.4rem;
+
+    /* background: orange; */
+   /* padding-top: 10px;
+   padding-bottom: 15px; */
+}
+
+.side-drawer li:nth-child(1) {
+    padding-right: 45px;
+}
+
+.side-drawer li:nth-child(1):hover {
+    background: transparent;
+}
+.side-drawer li:nth-child(6){
+    border-bottom: none;
+}
+.side-drawer li:hover {
+    background: white;
+}
+
+
 
 .side-drawer a:hover, .side-drawer a:active {
     color: white;
-    /* background: blue; */
 }
 
 @media (min-width: 769px){
