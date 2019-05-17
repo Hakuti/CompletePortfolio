@@ -1,33 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .Desktop-NavMenu ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.Mobile-Menu-Overlay {
+  display: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Mobile-DrawerMenu {
+  display: hidden;
 }
+
+.Desktop-NavMenu li {
+  padding: 10px;
+  background: orange;
+}
+
+.Cloud {
+  background: orange;
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  left: 20px;
+  
+}
+.Desktop-NavMenu {
+  position: relative;
+  display: flex;
+  background: blue;
+  justify-content: flex-end;
+ 
+}
+
+.Mobile-NavMenu {
+  display: none;
+} */
+/* 
+@media only screen and (max-width: 600px) {
+
+  .Desktop-NavMenu {
+    display: none;
+  }
+
+  .Mobile-NavMenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: blue;
+  }
+
+  
+  .Mobile-NavMenu h5 {
+    background: purple;
+  }
+  
+  .Mobile-NavMenu div {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 100%;
+    background: orange;
+  }
+
+  .Mobile-DrawerMenu {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 300px;
+    background: red;
+    transition: 1s;
+    z-index: 10000;
+  }
+
+  .Mobile-Menu-Overlay {
+    
+    background: black;
+    opacity: .2;
+
+    
+  }
+
+
+ 
+} */

@@ -1,26 +1,91 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/Toolbar/Toolbar.css';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Toolbar from './components/Toolbar/Toolbar'
+import Backdrop from './components/Backdrop/Backdrop';
+import { throwStatement } from '@babel/types';
 
-function App() {
+class App extends Component {
+
+  state = {
+    SideDrawerOpen: false
+  };
+
+  drawerToggleClickerHandler = () => {
+    this.setState((prevState) => {
+      return {SideDrawerOpen: !prevState.SideDrawerOpen};
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({SideDrawerOpen: false});
+  }
+
+  render(){
+    let backdrop;
+
+    if(this.state.SideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler}/>
+    }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{height: '100%'}}>
+      <Toolbar drawerClickHandler={this.drawerToggleClickerHandler}></Toolbar>
+      <SideDrawer show={this.state.SideDrawerOpen}/>
+      {backdrop}
+      <main style={{marginTop: '56px'}}>
+      <p>This is the page content</p>
+      </main>
     </div>
+
+
+
+
+
+    // <div className="Desktop-NavMenu-Wrapper">
+    // <React.Fragment>
+      /* <div className="Mobile-Menu-Overlay">
+      <nav className="Desktop-NavMenu">
+      <div className="Cloud">
+
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Github</li>
+        <li>LinkedIn</li>
+        </ul>
+      </nav>
+
+
+    <nav className="Mobile-NavMenu">
+
+      <div>
+
+      </div>
+      <h5>
+        Jean Canales
+      </h5>
+    </nav>
+
+
+    </div>
+   
+    <div className="Mobile-DrawerMenu">
+
+    </div> */
+
+    // </React.Fragment>
+
+
+
+
+
+    
   );
+  }
 }
 
 export default App;
