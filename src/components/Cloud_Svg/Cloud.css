@@ -1,0 +1,15 @@
+.cloud-mobile {
+    position: absolute;
+    top: 8px;
+    left: 19px;
+    visibility: hidden;
+    /* position: relative; */
+    /* height: 100px; */
+}
+
+@media (max-width: 768px) {
+    .cloud-mobile{
+        visibility: visible;
+    }
+}
+

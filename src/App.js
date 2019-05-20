@@ -5,7 +5,11 @@ import './components/Toolbar/Toolbar.css';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Toolbar from './components/Toolbar/Toolbar'
 import Backdrop from './components/Backdrop/Backdrop';
+import Cloud from './components/Cloud_Svg/Cloud';
+
 import { throwStatement } from '@babel/types';
+import CardPortfolio from './components/CardPortfolio/CardPortfolio';
+
 
 class App extends Component {
 
@@ -36,7 +40,15 @@ class App extends Component {
       <SideDrawer show={this.state.SideDrawerOpen}/>
       {backdrop}
       <main style={{marginTop: '56px'}}>
-      <p>This is the page content</p>
+      {/* <p>This is the page content</p> */}
+      {/* <Cloud></Cloud> */}
+
+      <div className="horizontal-scroll">
+      {/* <CardPortfolio></CardPortfolio> */}
+      <CardPortfolio></CardPortfolio>
+      {/* <CardPortfolio></CardPortfolio> */}
+
+      </div>
       </main>
     </div>
 
