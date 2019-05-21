@@ -34,6 +34,22 @@
     color: white;
 }
 
+@media (min-width: 769px) and (max-width: 1095px){
+    .home-portfolio-wrapper {
+       flex-wrap: wrap;
+
+        
+    }
+
+    
+   
+
+    .card-div-container:last-child {
+        margin-top: 40px !important;
+        margin-right: 50%;
+    }
+}
+
 @media (max-width: 768px){
     .horizontal-card-scroll {
         /* display: flex; */
@@ -56,6 +72,8 @@
        font-weight: 500;
    }
 
+   
+
    .home-h6 {
        font-size: 1.2rem;
        font-weight: 400;
@@ -77,6 +95,7 @@
     margin-right: 30px;
 }
 }
+
 
 @media (min-width: 1700px){
     .home-portfolio-wrapper
