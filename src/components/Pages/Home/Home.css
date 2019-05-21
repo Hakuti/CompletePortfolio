@@ -77,6 +77,8 @@
         margin-top: 50px;
         margin-left: 110px;
         margin-right: 110px;
+        -webkit-overflow-scrolling: touch;
+
     }
 
     .home-h6 {
