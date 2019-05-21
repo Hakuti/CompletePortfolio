@@ -5,10 +5,13 @@ import './components/Toolbar/Toolbar.css';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Toolbar from './components/Toolbar/Toolbar'
 import Backdrop from './components/Backdrop/Backdrop';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Cloud from './components/Cloud_Svg/Cloud';
 
 import { throwStatement } from '@babel/types';
 import CardPortfolio from './components/CardPortfolio/CardPortfolio';
+import Home from './components/Pages/Home/Home';
+import Contact from './components/Pages/Contact/Contact';
 
 
 class App extends Component {
@@ -34,22 +37,33 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler}/>
     }
 
+    
+    
+
   return (
-    <div style={{height: '100%'}}>
+    <div style={{height: '100%'}} >
+    <Router>
+      
       <Toolbar drawerClickHandler={this.drawerToggleClickerHandler}></Toolbar>
       <SideDrawer show={this.state.SideDrawerOpen}/>
       {backdrop}
       <main style={{marginTop: '56px'}}>
+
+      
       {/* <p>This is the page content</p> */}
       {/* <Cloud></Cloud> */}
 
-      <div className="horizontal-scroll">
+      {/* <div className="horizontal-scroll"> */}
       {/* <CardPortfolio></CardPortfolio> */}
-      <CardPortfolio></CardPortfolio>
+      {/* <CardPortfolio></CardPortfolio> */}
       {/* <CardPortfolio></CardPortfolio> */}
 
-      </div>
+      {/* </div> */}
+      <Route path="/" exact component={Home}/>
+      <Route path="/Contact" exact component={Contact}/>
+
       </main>
+      </Router>
     </div>
 
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import './Cloud.css'
+import './CloudDesktop.css'
 
-const Cloud = props => {
+const CloudDesktop = props => {
   return (
 
-    <svg xmlns="http://www.w3.org/2000/svg" width={props.minWidth} height={props.minHeight} viewBox="0 0 41.287 37.936" fill="#30D2FF" className="cloud-mobile">
+    <svg xmlns="http://www.w3.org/2000/svg" width={props.minWidth} height={props.minHeight} viewBox="0 0 41.287 37.936" fill="white" className="cloud-desktop">
   <defs>
     
   </defs>
@@ -15,4 +15,4 @@ const Cloud = props => {
   )
 }
 
-export default Cloud
+export default CloudDesktop

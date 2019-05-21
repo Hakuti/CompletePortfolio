@@ -1,0 +1,17 @@
+.cloud-desktop {
+    position: absolute;
+    top: 8px;
+    left: 19px; 
+    visibility: visible;
+    /* position: relative; */
+    /* height: 100px; */
+
+}
+
+@media (max-width: 768px) {
+    .cloud-desktop{
+        visibility: hidden;
+    }
+
+}
+

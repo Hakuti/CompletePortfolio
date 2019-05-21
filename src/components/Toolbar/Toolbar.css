@@ -1,7 +1,6 @@
 .toolbar {
     width: 100%;
-    position: fixed;
-    background: purple;
+    /* background: purple; */
     height: 60px;
     top: 0;
     left: 0;
@@ -27,11 +26,7 @@
    
 }
 
-.toolbar {
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-         box-shadow: 0 2px 4px -2px black;
-}
+
 
 .toolbar__logo a {
     color: white;
@@ -66,6 +61,7 @@
 }
 
 @media (max-width: 768px) {
+
     .toolbar__navigation-items {
         display: none;
         
@@ -93,7 +89,13 @@
 
     .toolbar {
         background: white;
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+             box-shadow: 0 2px 4px -2px black;
+        position: fixed;
     }
+
+    
 
     
 }
@@ -103,6 +105,7 @@
         display: none;
     }
 
+    
    
     
     .toolbar_logo {
