@@ -45,6 +45,11 @@
         /* white-space: nowrap; */
     }
 
+    .horizontal-card-scroll::-webkit-scrollbar {
+        display: none;
+
+    }
+
    .home-h5 {
        margin-top: 100px;
        font-size: 2rem;
