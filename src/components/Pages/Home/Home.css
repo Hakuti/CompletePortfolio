@@ -39,7 +39,9 @@
         /* display: flex; */
         flex-wrap: nowrap;
         overflow-x: auto;
-        justify-content: flex-start
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+
         /* white-space: nowrap; */
     }
 
@@ -77,7 +79,6 @@
         margin-top: 50px;
         margin-left: 110px;
         margin-right: 110px;
-        -webkit-overflow-scrolling: touch;
 
     }
 
