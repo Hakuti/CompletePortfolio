@@ -3,13 +3,15 @@ import React from 'react';
 import './SideDrawer.css';
 
 const sideDrawer = props => {
-    
     let drawerClasses = 'side-drawer';
     if(props.show){
         drawerClasses = 'side-drawer open';
     }
     return(
-    <nav className={drawerClasses}>
+    <nav className={drawerClasses} 
+    background={props.pathname == `/` ? "#30D2FF":
+ props.pathname == `/Contact` ? '#FF7474': ""}
+    >
         <ul>
             <li><a href="/">Jean Canales</a></li>
             <li><a href="/">Home</a></li>

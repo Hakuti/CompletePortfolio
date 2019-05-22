@@ -178,12 +178,13 @@
     }
 
     .card-div-container{
-        /* width: 350px; */
-        width: 90%;
+        width: 350px;
+        /* width: 90%; */
         height: 500px;
     }
     .card-content-div p {
         font-weight: 500;
+        font-size: 16px;
     }
     .card-div-container:nth-child(1){
         margin-left: 10px;
