@@ -18,9 +18,9 @@ const sideDrawer = props => {
             <li><a href="/">LinkedIn</a></li>
             <li><a href="/">Github</a></li>
         </ul>
-        <div className="side-drawer__x-button">
+        {/* <div className="side-drawer__x-button">
             X
-        </div>
+        </div> */}
     </nav>
     );
 };

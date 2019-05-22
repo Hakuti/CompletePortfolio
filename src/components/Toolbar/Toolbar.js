@@ -12,7 +12,7 @@ const toolbar = props =>  {
     <header className="toolbar">
         <nav className="toolbar__navigation">
             <Cloud minWidth="54.28" minHeight="42.936"></Cloud>
-            {/* <CloudDesktop minWidth="120" minHeight="120"></CloudDesktop> */}
+            <CloudDesktop minWidth="250" minHeight="130"></CloudDesktop>
             <div className="toolbar__toggle-button"><DrawerToggleButton click={props.drawerClickHandler} ></DrawerToggleButton></div>
             <div className="toolbar__logo"><a href="/">Jean Canales</a></div>
             <div className="spacer"></div>

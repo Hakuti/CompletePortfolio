@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 body {
-  background: #30D2FF;
+  background-color: #30D2FF;
+  background-image: url("./background_images/clouds-background.png");
   height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
