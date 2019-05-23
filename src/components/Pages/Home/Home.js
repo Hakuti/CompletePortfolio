@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CardPortfolio from '../../CardPortfolio/CardPortfolio';
 import "./Home.css"
 import { Helmet } from 'react-helmet';
+import { Player } from 'video-react';
+
 
 
 export default class Home extends Component {
