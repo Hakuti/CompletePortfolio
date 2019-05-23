@@ -122,16 +122,18 @@
     width: 95%;
     margin: 0px auto;
     padding-top: 10px;
+    /* background: orange; */
     /* margin-top: 10px !important; */
-    height: 48%;
+    height: 50%;
     /* margin-top: 10px; */
     display: flex;
     justify-content: center;
     z-index: 0;
 }
 
-.card-img-holder-container video {
+.card-img-holder-container img {
    width: 100%;
+  
     position: relative;
     z-index: 0;
     border-top-left-radius: 3px;

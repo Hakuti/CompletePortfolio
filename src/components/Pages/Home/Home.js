@@ -21,9 +21,10 @@ export default class Home extends Component {
                 <h6 className="project-h6"> Projects</h6>
                 <div className="home-portfolio-wrapper horizontal-card-scroll">
                 
+                <CardPortfolio image={"/images/funker.gif"}></CardPortfolio>
+                <CardPortfolio image={"/images/partihaus.gif"}></CardPortfolio>
                 <CardPortfolio></CardPortfolio>
-                <CardPortfolio></CardPortfolio>
-                <CardPortfolio></CardPortfolio>
+
                 </div>
 
                 {/* <CardPortfolio></CardPortfolio> */}
