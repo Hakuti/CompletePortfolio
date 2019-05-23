@@ -30,7 +30,7 @@ import { pause, play } from 'video-react/lib/actions/player';
 
      <div className="line-decorator-div"></div>
      <div className="card-content-div">
-     <p>Mobile racing app, race with other people online using the matchmaking system</p>
+     <p>{props.description}</p>
      </div>
 
      <div className="card-footer-div">

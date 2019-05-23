@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import { Player } from 'video-react';
 
 
+const descriptionArr = ["Music quiz app, guess the song playing, you have a 10 second demo for each song.", "Find parties going on, and go to those events! ", "Mobile racing app, race with other people online using the matchmaking system"  ]
 
 export default class Home extends Component {
     render(){
@@ -21,9 +22,9 @@ export default class Home extends Component {
                 <h6 className="project-h6"> Projects</h6>
                 <div className="home-portfolio-wrapper horizontal-card-scroll">
                 
-                <CardPortfolio image={"/images/funker.gif"}></CardPortfolio>
-                <CardPortfolio image={"/images/partihaus.gif"}></CardPortfolio>
-                <CardPortfolio></CardPortfolio>
+                <CardPortfolio description={descriptionArr[0]} image={"/images/funkerL.gif"}></CardPortfolio>
+                <CardPortfolio description={descriptionArr[1]} image={"/images/partihaus.gif"}></CardPortfolio>
+                <CardPortfolio description={descriptionArr[2]}></CardPortfolio>
 
                 </div>
 
