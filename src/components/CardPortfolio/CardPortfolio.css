@@ -17,6 +17,10 @@
 
 }
 
+
+
+
+
 .card-portfolio-title {
     position: relative;
     display: flex;
@@ -158,6 +162,14 @@
    
         margin-left: 30px !important;
         
+    }
+
+    .card-div-container:hover {
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+             box-shadow: 0 6px 8px -6px black;
+             transform: translateY(-2%);
+             transition: transform .1s ease-in;
     }
 
     .card-footer-div button:nth-child(2){

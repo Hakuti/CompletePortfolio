@@ -50,6 +50,8 @@
 }
 .toolbar__navigation-items a {
     color: white;
+    font-family: "Roboto";
+    font-weight: 500;
     text-decoration: none;
 }
 
