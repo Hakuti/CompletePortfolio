@@ -105,25 +105,30 @@ color: white;
     position: relative;
     background: #2959C6;
     border-radius: 25px;
-    height: 40px;
-    width: 100px;
+    height: 50px;
+    width: 120px;
     font-size: 20px;
     font-family: "Roboto";
     font-weight: 500;
     color: white;
-    margin-top: 70px;
+    margin-top: 50px;
     border: none;
 }
 
 .popover-box h4 {
     /* background: red; */
+    width: 260px;
+    text-align: center;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .popover-box h5 {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 23px;
     /* background: orange; */
+    width: 220px;
+    
+    text-align: center;
 
 }
 
