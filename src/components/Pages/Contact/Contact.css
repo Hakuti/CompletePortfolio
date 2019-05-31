@@ -1,0 +1,72 @@
+.contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: blue; */
+}
+
+.contact-form div {
+    margin-top: 35px;
+    width: 33%;
+    height: 55px;
+    border-radius: 29px;
+    /* border: solid #2959C6 2px; */
+    position: relative;
+    background: white;
+}
+
+.contact-form button {
+    margin-top: 80px;
+    /* padding: 10px; */
+    border-radius: 25px;
+    width: 115px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Roboto";
+    background: #2959C6;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+
+
+
+.contact-form div input {
+    /* background-color: red; */
+    border: none;
+    position: relative;
+    width: 95%;
+    left: 20px;
+    top: 5px;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    font-size: 19px;
+    
+}
+
+
+.contact-form div input::placeholder {
+    font-size: 19px;
+    position: relative;
+    background: none;
+    font-family: "Roboto";
+    font-weight: 500;
+
+}
+
+.contact-form div input:focus {
+    outline: none;
+}
+
+
+h1 {
+margin-top: 100px;
+text-align: center;
+color: white;
+
+}
