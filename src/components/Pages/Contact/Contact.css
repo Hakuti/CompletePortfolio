@@ -7,13 +7,18 @@
 }
 
 .contact-form div {
-    margin-top: 35px;
+    margin-top: 30px;
     width: 33%;
     height: 55px;
     border-radius: 29px;
     /* border: solid #2959C6 2px; */
     position: relative;
     background: white;
+}
+
+.contact-form div:focus-within {
+    border: solid #2959C6 3px;
+    transition: .2s ease-in-out;
 }
 
 .contact-form button {
@@ -28,8 +33,12 @@
     color: white;
     border: none;
     font-weight: 500;
+    outline: none;
 }
 
+.active-border {
+    border: solid black !important;
+}
 
 
 
@@ -37,7 +46,7 @@
     /* background-color: red; */
     border: none;
     position: relative;
-    width: 95%;
+    width: 90%;
     left: 20px;
     top: 5px;
     font-family: "Roboto";
@@ -64,9 +73,60 @@
 }
 
 
+
+
 h1 {
-margin-top: 100px;
+margin-top: 80px;
 text-align: center;
 color: white;
 
+}
+
+.popover-box {
+    /* display: hidden; */
+    z-index: 100;
+    position: absolute;
+    margin: 0 auto;
+    background: white;
+    left: 0;
+    right: 0;
+    top: 208px;
+    width: 40rem;
+    height: 25rem;
+    bottom: 400px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px -3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popover-box button {
+    position: relative;
+    background: #2959C6;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: white;
+    margin-top: 70px;
+    border: none;
+}
+
+.popover-box h4 {
+    /* background: red; */
+    font-size: 30px;
+}
+
+.popover-box h5 {
+    font-size: 20px;
+    padding: 10px;
+    /* background: orange; */
+
+}
+
+.hide-popover {
+    visibility: hidden;
 }
