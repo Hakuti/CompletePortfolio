@@ -89,7 +89,7 @@
     height: 32px;
 }
 
-.card-footer-div button a, a:visited {
+.card-footer-div button a {
     text-decoration: none;
     color: white;
     
