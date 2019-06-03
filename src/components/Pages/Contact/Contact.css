@@ -137,3 +137,32 @@ color: white;
 .hide-popover {
     visibility: hidden;
 }
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .contact-form div {
+       width: 50%;
+       
+    }
+
+   
+}
+@media(min-width: 601px) and (max-width: 768px){
+    .contact-form div {
+    width: 70%;
+    }
+    .popover-box {
+        top: 150px;
+        width: 32rem;
+    }
+}
+
+@media (max-width: 600px){
+    .contact-form div {
+        width: 70%;
+    }
+
+    .popover-box {
+        top: 150px;
+        width: 28rem;
+    }
+}
