@@ -20,8 +20,8 @@ const toolbar = props =>  {
                 <ul>
                     <li><Link to="/"><a>Home</a></Link></li>
                     <li><Link to="/Contact"><a>Contact</a></Link></li>
-                    <li><a>Github</a></li>
-                    <li><a >LinkedIn</a></li>
+                    <li><a href="https://github.com/Hakuti" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/jean-canales-6b1441a7/" target="_blank">LinkedIn</a></li>
                     <li><a>Resume</a></li>
                     
                 </ul>
