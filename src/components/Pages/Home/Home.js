@@ -24,7 +24,7 @@ export default class Home extends Component {
                 
                 <CardPortfolio description={descriptionArr[0]} title={"Funker"} image={"/images/funkerL.gif"} linkDemo={"https://thawing-hollows-26473.herokuapp.com/"} linkGit={"https://github.com/Hakuti/Project2"}></CardPortfolio>
                 <CardPortfolio description={descriptionArr[1]} title={"Partihaus"} image={"/images/partihaus.gif"} linkDemo={"https://desolate-crag-32503.herokuapp.com/Login"} linkGit={"https://github.com/Hakuti/mern-auth"}></CardPortfolio>
-                <CardPortfolio description={descriptionArr[2]} title={"Govi"} link={""}></CardPortfolio>
+                <CardPortfolio description={descriptionArr[2]} title={"Govi"} image={"/images/govi.gif"} link={""}></CardPortfolio>
 
                 </div>
 
