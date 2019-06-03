@@ -22,9 +22,9 @@ export default class Home extends Component {
                 <h6 className="project-h6"> Projects</h6>
                 <div className="home-portfolio-wrapper horizontal-card-scroll">
                 
-                <CardPortfolio description={descriptionArr[0]} image={"/images/funkerL.gif"} linkDemo={"https://thawing-hollows-26473.herokuapp.com/"} linkGit={"https://github.com/Hakuti/Project2"}></CardPortfolio>
-                <CardPortfolio description={descriptionArr[1]} image={"/images/partihaus.gif"} linkDemo={"https://desolate-crag-32503.herokuapp.com/Login"} linkGit={"https://github.com/Hakuti/mern-auth"}></CardPortfolio>
-                <CardPortfolio description={descriptionArr[2]} link={""}></CardPortfolio>
+                <CardPortfolio description={descriptionArr[0]} title={"Funker"} image={"/images/funkerL.gif"} linkDemo={"https://thawing-hollows-26473.herokuapp.com/"} linkGit={"https://github.com/Hakuti/Project2"}></CardPortfolio>
+                <CardPortfolio description={descriptionArr[1]} title={"Partihaus"} image={"/images/partihaus.gif"} linkDemo={"https://desolate-crag-32503.herokuapp.com/Login"} linkGit={"https://github.com/Hakuti/mern-auth"}></CardPortfolio>
+                <CardPortfolio description={descriptionArr[2]} title={"Govi"} link={""}></CardPortfolio>
 
                 </div>
 
