@@ -89,6 +89,13 @@
     height: 32px;
 }
 
+.card-footer-div button a, a:visited {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
 .card-footer-div button:nth-child(1){
     margin-left: 21px !important;
     color: white;

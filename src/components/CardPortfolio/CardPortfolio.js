@@ -34,7 +34,7 @@ import { pause, play } from 'video-react/lib/actions/player';
      </div>
 
      <div className="card-footer-div">
-         <button>Demo</button>
+         <button><a href={props.link} target="_blank">Demo</a></button>
          <button>Github</button>
          
      </div>
