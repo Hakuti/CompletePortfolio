@@ -158,11 +158,17 @@ color: white;
 
 @media (max-width: 600px){
     .contact-form div {
-        width: 70%;
+        width: 66%;
+    }
+
+    .contact-form div input {
+        width: 85%;
     }
 
     .popover-box {
         top: 150px;
-        width: 28rem;
+        width: 21rem;
     }
+
 }
+
