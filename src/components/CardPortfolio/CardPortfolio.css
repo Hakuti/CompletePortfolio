@@ -93,7 +93,6 @@
     text-decoration: none;
     color: white;
     
-    
 }
 
 .card-footer-div button:nth-child(1){
@@ -104,15 +103,27 @@
 
 .card-footer-div button:nth-child(2){
     margin-right: 21px !important;
-    color: #30D2FF;
+    color: #30D2FF !important;
     border: 2.3px solid #30D2FF;
     background: none;
 
 }
 
+.card-footer-div button:nth-child(2) a {
+    color: #30D2FF !important;
+
+
+}
+
+
 .card-footer-div button:nth-child(2):hover {
     color: white;
     background: #30D2FF;
+    transition: 0.2s ease-in;
+}
+
+.card-footer-div button:nth-child(2):hover a {
+    color: white !important;
     transition: 0.2s ease-in;
 }
 
