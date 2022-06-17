@@ -1,29 +1,32 @@
-//create a react component
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Backdrop from "../Backdrop/Backdrop";
 import SideDrawer from "../SideDrawer/SideDrawer";
 import Toolbar from "../Toolbar/Toolbar";
+
 export default function Layout() {
-  const [show, setShow] = React.useState(false);
-  const handleClick = () => setShow(!show);
+  const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
+  const [showBackdrop, setShowBackdrop] = React.useState(false);
 
-  const [showOverlay, setShowOverlay] = React.useState(false);
-  const handleOverlayClick = () => setShowOverlay(!showOverlay);
+  const handleSideDrawerClick = () => {
+    setShowBackdrop(!showBackdrop);
+    setSideDrawerOpen(!sideDrawerOpen);
+  };
+  const backdropClickHandler = () => {
+    setSideDrawerOpen(false);
+    setShowBackdrop(false);
+  };
 
-  const [showSideDrawer, setShowSideDrawer] = React.useState(false);
-  const handleSideDrawerClick = () => setShowSideDrawer(!showSideDrawer);
-
-  const backdrop = showOverlay ? (
-    <Backdrop className="backdrop" onClick={handleOverlayClick} />
+  const backdrop = showBackdrop ? (
+    <Backdrop className="backdrop" onClick={backdropClickHandler} />
   ) : null;
 
   return (
-    <>
+    <main>
       <Toolbar drawerClickHandler={handleSideDrawerClick} />
-      <SideDrawer show={show} onClick={handleClick} />
+      <SideDrawer show={sideDrawerOpen} />
       {backdrop}
       <Outlet />
-    </>
+    </main>
   );
 }
