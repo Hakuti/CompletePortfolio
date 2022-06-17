@@ -1,14 +1,28 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./Cloud.css";
 
 const Cloud = (props) => {
+  const location = useLocation();
+  const backgroundColor = () => {
+    if (location.pathname === "/") {
+      console.log("home");
+      return "#30D2FF";
+    } else if (location.pathname === "/Contact") {
+      console.log("contact");
+      return "#FF7474";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={props.minWidth}
       height={props.minHeight}
       viewBox="0 0 41.287 37.936"
-      fill="#30D2FF"
+      fill={backgroundColor()}
       className="cloud-mobile"
     >
       <defs></defs>

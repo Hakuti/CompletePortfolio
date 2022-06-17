@@ -4,7 +4,7 @@ import Backdrop from "../Backdrop/Backdrop";
 import SideDrawer from "../SideDrawer/SideDrawer";
 import Toolbar from "../Toolbar/Toolbar";
 
-export default function Layout() {
+export default function Layout(props) {
   const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
   const [showBackdrop, setShowBackdrop] = React.useState(false);
 
@@ -24,7 +24,11 @@ export default function Layout() {
   return (
     <main>
       <Toolbar drawerClickHandler={handleSideDrawerClick} />
-      <SideDrawer show={sideDrawerOpen} />
+      <SideDrawer
+        show={sideDrawerOpen}
+        drawerClickHandler={handleSideDrawerClick}
+        {...props}
+      />
       {backdrop}
       <Outlet />
     </main>
